@@ -16,4 +16,4 @@
 
 # Mis Diagramas:
 
-  [Mi GitHub](https://github.com/BrendaCoronel/UML2024)
+  [Diagrama ER](https://github.com/BrendaCoronel/UML2024/tree/master)
