@@ -17,3 +17,5 @@
 # Mis Diagramas:
 
   [Diagrama ER](https://github.com/BrendaCoronel/UML2024/tree/master)
+
+  [Diagrama de Clases](https://github.com/BrendaCoronel/UML2024/blob/master/Diagram_Clases_umbrello.png)
