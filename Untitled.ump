@@ -1,0 +1,116 @@
+class Cliente {
+  String id_cliente;
+  String nombre;
+  String apellido;
+  Integer edad;
+  String genero;
+  String email;
+  String telefono;
+  * -- * Compra;
+}
+
+class Producto {
+  String id_producto;
+  String nombre_producto;
+  String descripcion;
+  Float precio;
+  Integer stock;
+  String tamanio;
+  String color;
+}
+
+class Categoria {
+  String id_categoria;
+  String nombre_categoria;
+  * -- * Producto;
+}
+
+class Compra {
+  String id_compra;
+  Date fecha;
+}
+
+class Detalle_Compra {
+  String id_detalle;
+  Integer cantidad;
+  Float precio_unitario;
+}
+
+class Empleado {
+    isA Gerente;
+String id_empleado;
+  String nombre_empleado;
+  String puesto;
+  String telefono;
+  * -- * Gerente;
+  * -- * Vendedor;
+}
+
+class Gerente {
+  String area_responsable;
+}
+
+class Vendedor {
+    isA Empleado;
+Integer ventas_realizadas;
+}
+
+
+
+
+//$?[End_of_model]$?
+
+namespace -;
+
+
+class Cliente
+{
+  position 119 73 139.844 160.359;
+  position.association Cliente__Compra 95,160 77,0;
+  position.association Cliente__Detalle_Compra 205,91 73,41;
+  position.association Cliente__Compra 172,38 82,0;
+  position.association Cliente__Compra 94,92 47,0;
+}
+
+class Producto
+{
+  position 479 10 194.594 160.359;
+}
+
+class Categoria
+{
+  position 767 298 197.359 75.3594;
+  position.association Categoria__Producto 31,0 204,127;
+  position.association Categoria__Producto 7,0 204,135;
+  position.association Categoria__Producto 33,0 204,152;
+}
+
+class Compra
+{
+  position 131 349 145.781 75.3594;
+  position.association Compra__Detalle_Compra 155,48 0,29;
+  position.association Compra__Empleado 47,37 48,0;
+}
+
+class Detalle_Compra
+{
+  position 453 263 168.109 92.3594;
+  position.association Detalle_Compra__Producto 122,0 101,110;
+}
+
+class Empleado
+{
+  position 166 543 200.688 109.359;
+  position.association Empleado__Gerente 210,32 0,9;
+  position.association Empleado__Vendedor 210,21 0,37;
+}
+
+class Gerente
+{
+  position 659 568 193.953 58.3594;
+}
+
+class Vendedor
+{
+  position 820 460 204.344 58.3594;
+}
